@@ -1,0 +1,12 @@
+type: object
+required:
+  - id
+  - nombreCorto
+  - nombre
+properties:
+  id:
+    type: integer
+  nombreCorto:
+    type: string
+  nombre:
+    type: string

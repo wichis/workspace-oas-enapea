@@ -1,0 +1,15 @@
+# Nivel de desagregacion territorial.
+type: object
+required:
+  - id
+  - clave
+  - nombre
+properties:
+  id:
+    type: integer
+  cve:
+    type: string
+    enum: [EDO, REG, MUN, LOC]
+  nombre:
+    type: string
+    minimum: 0

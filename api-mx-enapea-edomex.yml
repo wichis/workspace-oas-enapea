@@ -1,0 +1,110 @@
+openapi: "3.0.0"
+info:
+  title: API for ENAPEA EdoMex
+  version: "1.0.0"
+servers:
+  - url: https://api.server.test/v1
+paths:
+  /estados:
+    get:
+      description: Look for estados of Mexico
+      responses:
+        "200":
+          description: "Return list of Mexico states"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Estado"
+              example:
+                $ref: "./examples/estados.example.json"
+  /regiones/{idEstado}:
+    get:
+      description: Look for regiones by Estado Id
+      parameters:
+        - name: idEstado
+          in: path
+          description: region that estado belongs
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        "200":
+          description: "Return list of region by specific Estado Id"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Region"
+              example:
+                $ref: "./examples/regiones.example.json"
+  /municipios/{idRegion}:
+    get:
+      description: Look for Municipios by Region ID
+      parameters:
+        - name: idRegion
+          in: path
+          description: Municipio that region belongs
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        "200":
+          description: "Return list of Municipios of region"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Municipio"
+              example:
+                $ref: "./examples/municipios.example.json"
+  /localidades/{idMunicipio}:
+    get:
+      description: Look for Localidades by Municipio ID
+      parameters:
+        - name: idMunicipio
+          in: path
+          description: Localidad that municipio belongs
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        "200":
+          description: "Return list of Localidades of Municipio"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Localidad"
+              example:
+                $ref: "./examples/localidades.example.json"
+  /componentes:
+    get:
+      responses:
+        "200":
+          description: "Return list of components"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Componente"
+              example:
+                $ref: "./examples/componentes.example.json"
+components:
+  schemas:
+    Componente:
+      $ref: "./schemas/componente.yml"
+    Estado:
+      $ref: "./schemas/estado.yml"
+    Municipio:
+      $ref: "./schemas/municipio.yml"
+    Localidad:
+      $ref: "./schemas/localidad.yml"
+    Region:
+      $ref: "./schemas/region.yml"

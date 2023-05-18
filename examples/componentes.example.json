@@ -1,0 +1,21 @@
+[
+  {
+    "cve": "FIN",
+    "nombreCorto": "Fin",
+    "nombre": "Contribuir a la equidad social potenciando las capacidades de las y los adolescentes mexicanos para alcanzar el desarrollo humano y el acceso a una vida digna mediante la reducción de los embarazos en niñas y adolescentes. Incluye el InDeHJ.",
+    "proposito": "TBD",
+    "indicadores": [
+      {
+        "id": 1,
+        "clave": "IND1010",
+        "nombre": "Índice de desarrollo Juvenil (porcentaje) (IMJUVE)",
+        "proposito": "TBD",
+        "nivelDesagregacion": {
+          "id": 1,
+          "clave": "EDO",
+          "nombre": "Estado"
+        }
+      }
+    ]
+  }
+]

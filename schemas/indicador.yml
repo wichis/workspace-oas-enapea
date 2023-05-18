@@ -1,0 +1,14 @@
+type: object
+required:
+  - name
+properties:
+  id:
+    type: string
+  cve:
+    type: string
+  nombre:
+    type: string
+  proposito:
+    type: string
+  nivelDesagregacion:
+    $ref: "./nivel-desagregacion.yml"

@@ -1,0 +1,21 @@
+type: object
+required:
+  - cve
+  - nombreCorto
+  - nombre
+  - indicadores
+properties:
+  cve:
+    type: string
+  nombreCorto:
+    type: string
+  nombre:
+    type: string
+  proposito:
+    type: string
+  indicadores:
+    type: array
+    items:
+      $ref: "./indicador.yml"
+    minItems: 1
+    uniqueItems: true
