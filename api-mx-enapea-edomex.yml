@@ -96,6 +96,21 @@ paths:
                 $ref: "#/components/schemas/Componente"
               example:
                 $ref: "./examples/componentes.example.json"
+  /indices:
+    get:
+      responses:
+        "200":
+          description: "Return list of Indices"
+  /indicadores/criterios/{idIndicador}:
+    get:
+      responses:
+        "200":
+          description: "Return list of Indices"
+  /enapea-valores:
+    get:
+      responses:
+        "200":
+          description: "Return tabla"
 components:
   schemas:
     Componente:

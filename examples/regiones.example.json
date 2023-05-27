@@ -1,7 +1,147 @@
 [
   {
     "id": 1,
-    "nombreCorto": "Region Norte",
-    "nombre": "Region Norte"
+    "nombreCorto": "AMECAMECA",
+    "nombre": "REGIÓN I AMECAMECA",
+    "municipios": [
+      {
+        "id": 9,
+        "nombre": "CHALCO"
+      },
+      {
+        "id": 10,
+        "nombre": "AMECAMECA"
+      },
+      {
+        "id": 11,
+        "nombre": "ATLAUTLA"
+      },
+      {
+        "id": 12,
+        "nombre": "AYAPANGO"
+      },
+      {
+        "id": 13,
+        "nombre": "COCOTITLÁN"
+      },
+      {
+        "id": 14,
+        "nombre": "ECATZINGO"
+      },
+      {
+        "id": 16,
+        "nombre": "JUCHITEPEC"
+      },
+      {
+        "id": 17,
+        "nombre": "OZUMBA"
+      },
+      {
+        "id": 18,
+        "nombre": "TEMAMATLA"
+      },
+      {
+        "id": 19,
+        "nombre": "TENANGO DEL AIRE"
+      },
+      {
+        "id": 20,
+        "nombre": "TEPETLIXPA"
+      },
+      {
+        "id": 21,
+        "nombre": "TLALMANALCO"
+      },
+      {
+        "id": 122,
+        "nombre": "VALLE DE CHALCO"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombreCorto": "ATLACOMULCO",
+    "nombre": "REGIÓN II ATLACOMULCO",
+    "municipios": [
+      {
+        "id": 22,
+        "nombre": "EL ORO"
+      },
+      {
+        "id": 23,
+        "nombre": "ACAMBAY DE RUIZ"
+      },
+      {
+        "id": 24,
+        "nombre": "ATLACOMULCO"
+      },
+      {
+        "id": 25,
+        "nombre": "TEMASCALCINGO"
+      },
+      {
+        "id": 28,
+        "nombre": "JOCOTITLÁN"
+      },
+      {
+        "id": 29,
+        "nombre": "MORELOS"
+      },
+      {
+        "id": 31,
+        "nombre": "JILOTEPEC"
+      },
+      {
+        "id": 32,
+        "nombre": "ACULCO"
+      },
+      {
+        "id": 33,
+        "nombre": "CHAPA DE MOTA"
+      },
+      {
+        "id": 34,
+        "nombre": "POLOTITLÁN"
+      },
+      {
+        "id": 35,
+        "nombre": "SOYANIQUILPAN DE"
+      },
+      {
+        "id": 36,
+        "nombre": "TIMILPAN"
+      },
+      {
+        "id": 37,
+        "nombre": "VILLA DEL CARBÓN"
+      },
+      {
+        "id": 124,
+        "nombre": "SAN JOSÉ DEL RI"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nombreCorto": "CHIMALHUACÁN",
+    "nombre": "REGIÓN III CHIMALHUACÁN",
+    "municipios": [
+      {
+        "id": 15,
+        "nombre": "IXTAPALUCA"
+      },
+      {
+        "id": 83,
+        "nombre": "CHICOLOAPAN"
+      },
+      {
+        "id": 85,
+        "nombre": "CHIMALHUACÁN"
+      },
+      {
+        "id": 86,
+        "nombre": "LA PAZ"
+      }
+    ]
   }
 ]

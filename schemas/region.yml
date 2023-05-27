@@ -10,3 +10,9 @@ properties:
     type: string
   nombre:
     type: string
+  municipios:
+    type: array
+    items:
+      $ref: "./municipio-simple.yml"
+    minItems: 1
+    uniqueItems: true
